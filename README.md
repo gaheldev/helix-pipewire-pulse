@@ -33,7 +33,8 @@ You can check that it is working by opening your sound settings. You should
 see the devices 'Playback - Helix' and 'Mic - Helix' being used:
 ![Gnome sound settings](routing.png)
 
-You can set it up to automatically run on startup using crontab.
+You can set it up to automatically run on login using Gnome's startup 
+application. Alternatively, you can set it up to run on startup using crontab.
 Run `crontab -e`, and add at the end of the file:
 ```
 @reboot /path/to/helix-pipewire-pulse/use-helix-virtual-sinks
