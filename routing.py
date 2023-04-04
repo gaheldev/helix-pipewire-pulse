@@ -17,12 +17,16 @@ if not pw.is_pulse_active():
     print('pipewire-pulse is not running')
 
 # create virtual sinks
+print('creating virtual sinks')
 pa.create_sink(mic_name, mic_desc, 'source', 'mono')
-pa.set_default_source(mic_name)
 pa.create_sink(playback_name, playback_desc, 'sink', 'stereo')
+
+print('using virtual sinks as default pulseaudio devices')
+pa.set_default_source(mic_name)
 pa.set_default_sink(playback_name)
 
 # connect virtual sinks with the helix ports
+print('connecting Helix to virtual sinks')
 pw.link(f'{helix_input_name}:capture_AUX7', f'{mic_name}:input_MONO')
 
 pw.link(f'{playback_name}:monitor_FL', f'{helix_output_name}:playback_AUX0')
