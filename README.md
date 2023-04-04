@@ -30,8 +30,8 @@ Launch the script to create the virtual sinks and connect the Helix
 ```
 
 You can check that it is working by opening your sound settings. You should 
-see the devices 'Playback - Helix' and 'Mic - Helix' being used. You can also
-use an app like helvum or carla to see the connections.
+see the devices 'Playback - Helix' and 'Mic - Helix' being used:
+![Gnome sound settings](routing.png)
 
 You can set it up to automatically run on startup using crontab.
 Run `crontab -e`, and add at the end of the file:
