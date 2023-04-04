@@ -13,8 +13,6 @@ mic_desc = 'Mic - HELIX'
 playback_name = 'helix_virtual.playback-stereo'
 playback_desc = 'Playback - Helix'
 
-if not pw.is_pulse_active():
-    print('pipewire-pulse is not running')
 
 # create virtual sinks
 print('creating virtual sinks')

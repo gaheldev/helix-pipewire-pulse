@@ -1,0 +1,20 @@
+#!/bin/bash
+
+max_try=10
+
+cd "$(dirname "$0")"
+
+for (( i=0; i<$max_try; ++i )); do
+	echo 'Waiting for pipewire-pulse to run'
+	sleep 1;
+	systemctl --user is-active --quiet pipewire-pulse
+	if [ $? -eq 0 ]; then
+		echo 'pipewire-pulse is running: setting up helix virtual sinks'
+		python3 routing.py
+		exit 0
+	fi
+done
+
+echo 'pipewire-pulse is still not running: aborting helix configuration'
+exit 1
+
