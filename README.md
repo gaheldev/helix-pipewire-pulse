@@ -31,7 +31,7 @@ Launch the script to create the virtual sinks and connect the Helix
 
 You can check that it is working by opening your sound settings. You should 
 see the devices 'Playback - Helix' and 'Mic - Helix' being used:
-![Gnome sound settings](routing.png)
+![Gnome sound settings](gnome-settings.png)
 
 If you're using Gnome, you can set it up to automatically run on login using 
 Startup Application. 
