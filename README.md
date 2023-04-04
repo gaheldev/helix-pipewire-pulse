@@ -10,9 +10,14 @@ and monitoring remain connected to the virtual sinks.
 
 ![Example automatic routing when playing a video in Firefox and being in a voice call](routing.png)
 
-### How to use
+### How to
+Make the script executable
 ```
 chmod +x use-helix-virtual-sinks
+```
+
+Launch the script to create the virtual sinks and connect the Helix
+```
 ./use-helix-virtual-sinks
 ```
 
