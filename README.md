@@ -24,7 +24,7 @@ Launch the script to create the virtual sinks and connect the Helix
 You can set it up to automatically run on startup using crontab.
 Run `crontab -e`, and add at the end of the file:
 ```
-@reboot /home/gael/code/audio/helix-pipewire-pulse/use-helix-virtual-sinks
+@reboot /path/to/helix-pipewire-pulse/use-helix-virtual-sinks
 ```
 
 
