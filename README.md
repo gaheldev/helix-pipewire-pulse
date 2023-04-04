@@ -10,7 +10,7 @@ and monitoring remain connected to the virtual sinks.
 
 ![Example automatic routing when playing a video in Firefox and being in a voice call](routing.png)
 
-### Installation
+## Installation
 Clone the git repo
 ```
 git clone https://github.com/ZelvStudio/helix-pipewire-pulse.git
@@ -23,7 +23,7 @@ chmod +x use-helix-virtual-sinks
 ```
 
 
-### How to
+## Usage
 Launch the script to create the virtual sinks and connect the Helix
 ```
 ./use-helix-virtual-sinks
@@ -44,7 +44,7 @@ Run `crontab -e`, and add at the end of the file:
 ```
 
 
-### Motivation
+## Motivation
 When using pipewire, the Helix is detected as a Pro soundcard (8 in / 8 out). 
 That is exactly what's needed for pro audio work, where one wants to manually 
 route all ports. However, that creates some issues for apps using pulseaudio
