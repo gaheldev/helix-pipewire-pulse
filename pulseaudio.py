@@ -33,3 +33,6 @@ def set_default_sink(name):
 def set_default_source(name):
     subprocess.run(f"pactl set-default-source {name}",shell=True)
 
+def exists(sink_name):
+    p = subprocess.run(f'pactl list | grep {sink_name} | wc -l', shell=True, capture_output=True)
+    return int(p.stdout) > 0

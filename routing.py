@@ -16,8 +16,16 @@ playback_desc = 'Playback - Helix'
 
 # create virtual sinks
 print('creating virtual sinks')
-pa.create_sink(mic_name, mic_desc, 'source', 'mono')
-pa.create_sink(playback_name, playback_desc, 'sink', 'stereo')
+
+if not pa.exists(mic_name):
+    pa.create_sink(mic_name, mic_desc, 'source', 'mono')
+else:
+    print(f'{mic_name} already exists')
+
+if not pa.exists(playback_name):
+    pa.create_sink(playback_name, playback_desc, 'sink', 'stereo')
+else:
+    print(f'{playback_name} already exists')
 
 print('using virtual sinks as default pulseaudio devices')
 pa.set_default_source(mic_name)
