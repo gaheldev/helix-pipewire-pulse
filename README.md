@@ -11,10 +11,17 @@ and monitoring remain connected to the virtual sinks.
 ![Example automatic routing when playing a video in Firefox and being in a voice call](routing.png)
 
 ### How to use
-Just download and run:
 ```
-python3 routing.py
+chmod +x use-helix-virtual-sinks
+./use-helix-virtual-sinks
 ```
+
+You can set it up to automatically run on startup using crontab.
+Run `crontab -e`, and add at the end of the file:
+```
+@reboot /home/gael/code/audio/helix-pipewire-pulse/use-helix-virtual-sinks
+```
+
 
 ### Motivation
 When using pipewire, the Helix is detected as a Pro soundcard (8 in / 8 out). 
