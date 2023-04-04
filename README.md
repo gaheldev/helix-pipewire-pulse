@@ -8,7 +8,7 @@ This script allows to automatically connect the desktop apps to the Helix mic
 created and set as default by pulseaudio (pipewire-pulse). The Helix mic and 
 and monitoring remain connected to the virtual sinks.
 
-![plot](routing.png)
+![Example automatic routing when playing a video in Firefox and being in a voice call](routing.png)
 
 ### How to use
 Just download and run:
