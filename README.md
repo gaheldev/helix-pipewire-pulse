@@ -10,16 +10,28 @@ and monitoring remain connected to the virtual sinks.
 
 ![Example automatic routing when playing a video in Firefox and being in a voice call](routing.png)
 
-### How to
+### Installation
+Clone the git repo
+```
+git clone https://github.com/ZelvStudio/helix-pipewire-pulse.git
+```
+
 Make the script executable
 ```
+cd helix-pipewire-pulse
 chmod +x use-helix-virtual-sinks
 ```
 
+
+### How to
 Launch the script to create the virtual sinks and connect the Helix
 ```
 ./use-helix-virtual-sinks
 ```
+
+You can check that it is working by opening your sound settings. You should 
+see the devices 'Playback - Helix' and 'Mic - Helix' being used. You can also
+use an app like helvum or carla to see the connections.
 
 You can set it up to automatically run on startup using crontab.
 Run `crontab -e`, and add at the end of the file:
