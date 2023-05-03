@@ -16,6 +16,11 @@ Clone the git repo
 git clone https://github.com/ZelvStudio/helix-pipewire-pulse.git
 ```
 
+Install pactl if not already on your system, on Ubuntu:
+```
+sudo apt install pulseaudio-utils
+```
+
 Make the script executable
 ```
 cd helix-pipewire-pulse
