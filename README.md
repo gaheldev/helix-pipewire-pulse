@@ -6,7 +6,7 @@ and desktop use.
 This script allows to automatically connect the desktop apps to the Helix mic
 (USB 8), and to the Helix monitoring (USB 1/2). For that, virtual sinks are 
 created and set as default by pulseaudio (pipewire-pulse). The Helix mic and 
-and monitoring remain connected to the virtual sinks.
+monitoring remain connected to the virtual sinks.
 
 ![Example automatic routing when playing a video in Firefox and being in a voice call](routing.png)
 
