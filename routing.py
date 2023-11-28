@@ -37,3 +37,7 @@ pw.link(f'{helix_input_name}:capture_AUX7', f'{mic_name}:input_MONO')
 
 pw.link(f'{playback_name}:monitor_FL', f'{helix_output_name}:playback_AUX0')
 pw.link(f'{playback_name}:monitor_FR', f'{helix_output_name}:playback_AUX1')
+
+
+# create stereo sink
+pa.create_sink('helix_virtual.stereo-input', 'Virtual Input', 'source', 'stereo')
