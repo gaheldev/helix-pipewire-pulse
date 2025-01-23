@@ -1,3 +1,5 @@
+#!/bin/python3
+
 import pulseaudio as pa
 import pipewire as pw
 
