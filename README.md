@@ -13,7 +13,7 @@ monitoring remain connected to the virtual sinks.
 ## Installation
 Clone the git repo
 ```
-git clone https://github.com/ZelvStudio/helix-pipewire-pulse.git
+git clone https://github.com/gaheldev/helix-pipewire-pulse.git
 ```
 
 Install pactl if not already on your system, on Ubuntu:
